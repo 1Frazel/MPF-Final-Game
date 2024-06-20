@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insomnomnomniac</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #gameContainer {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas {
+            background: #000;
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="480" class="hidden"></canvas>
+        <div id="notification" class="overlay hidden"></div>
+        <div id="mainMenu" class="overlay">
+            <h1>Insomnomnomniac</h1>
+            <button id="playButton">Play</button>
+        </div>
+        <div id="gameOverMenu" class="overlay hidden">
+            <h1>Game Over</h1>
+            <button id="restartButton">Restart</button>
+            <button id="quitButton">Quit</button>
+        </div>
+        <div id="winMenu" class="overlay hidden">
+            <h1>You Win!</h1>
+            <button id="backToMainButton">Back to Main Menu</button>
+        </div>
+    </div>
+    <script src="floorcollisions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
