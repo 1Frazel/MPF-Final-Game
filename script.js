@@ -19,19 +19,19 @@ const mapWidth = 6144; // Define the map width larger than the canvas
 const mapHeight = 960; // Keep the map height same as the canvas
 
 const backgroundImage = new Image();
-backgroundImage.src = '/assets/stage3.png'; // Replace with the path to your background image
+backgroundImage.src = './assets/stage3.png'; // Replace with the path to your background image
 
 const idleSprite = new Image();
-idleSprite.src = '/assets/Insomnomnomnia_maincharIdle_R.png'; // Replace with the path to your sprite sheet
+idleSprite.src = './assets/Insomnomnomnia_maincharIdle_R.png'; // Replace with the path to your sprite sheet
 
 const walkSprite = new Image();
-walkSprite.src = '/assets/Insomnomnomnia_maincharWalk_R.png'; // Replace with the path to your sprite sheet
+walkSprite.src = './assets/Insomnomnomnia_maincharWalk_R.png'; // Replace with the path to your sprite sheet
 
 const jumpSprite = new Image();
-jumpSprite.src = '/assets/Insomnomnomnia_maincharJump_R.png'; // Replace with the path to your sprite sheet
+jumpSprite.src = './assets/Insomnomnomnia_maincharJump_R.png'; // Replace with the path to your sprite sheet
 
 const monsterSprite = new Image();
-monsterSprite.src = '/assets/Insomsomnia_enemySlimeBMove.png'; // Replace with the path to your sprite sheet
+monsterSprite.src = './assets/Insomsomnia_enemySlimeBMove.png'; // Replace with the path to your sprite sheet
 
 const obstacleHeight = 100; // Define the obstacle height
 const playerHeight = obstacleHeight / 2; // Define the player's height as half the obstacle height
