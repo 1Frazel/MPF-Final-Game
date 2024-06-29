@@ -19,7 +19,8 @@ Game dapat dimainkan dengan mengakses link berikut: https://1frazel.github.io/MP
 atau
 Run game secara manual dengan mengikuti tutorial dibawah ini:
 
-# Before running the Application contained in this git, please change the file path to your own path, such as "C:/Users/**User Name*/Downloads/MPF/MPF/assets/stage3.png" for every src path this .js code has"
+# Tutorial Run secara manual
+Before running the Application contained in this git, please change the file path to your own path, such as "C:/Users/**User Name*/Downloads/MPF/MPF/assets/stage3.png" for every src path this .js code has"
 How to do it:
 1. Open the folder containing all the files in your Code Editor (example: Visual Studio Code)
 2. Open the Assets pack inside, and right click the part such as stage3.png, Insomnomnomnia_mainCharIdle_R.png etc.
