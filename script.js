@@ -22,34 +22,34 @@ const backgroundImage = new Image();
 backgroundImage.src = './assets/stage3.png'; // Replace with the path to your background image
 
 const idleSprite = new Image();
-idleSprite.src = './assets/Insomnomnomnia_maincharIdle_R.png'; // Replace with the path to your sprite sheet
+idleSprite.src = './assets/Insomnomnomnia_maincharIdle_R.png'; 
 
 const walkSprite = new Image();
-walkSprite.src = './assets/Insomnomnomnia_maincharWalk_R.png'; // Replace with the path to your sprite sheet
+walkSprite.src = './assets/Insomnomnomnia_maincharWalk_R.png'; 
 
 const jumpSprite = new Image();
-jumpSprite.src = './assets/Insomnomnomnia_maincharJump_R.png'; // Replace with the path to your sprite sheet
+jumpSprite.src = './assets/Insomnomnomnia_maincharJump_R.png'; 
 
 const monsterSprite = new Image();
-monsterSprite.src = './assets/Insomsomnia_enemySlimeBMove.png'; // Replace with the path to your sprite sheet
+monsterSprite.src = './assets/Insomsomnia_enemySlimeBMove.png';
 
-const obstacleHeight = 100; // Define the obstacle height
-const playerHeight = obstacleHeight / 2; // Define the player's height as half the obstacle height
-const playerWidth = playerHeight * 0.8; // Define the player's width relative to height
+const obstacleHeight = 100; 
+const playerHeight = obstacleHeight / 2;
+const playerWidth = playerHeight * 0.8; 
 
 const initialSpawnX = 5;
-const initialSpawnY = 610 - playerHeight; // Position player above the floor
+const initialSpawnY = 610 - playerHeight; 
 
 // Sound effects and background music
-const walkSound = new Audio('/music/Sound Effects - Footsteps.mp3');
-const jumpSound = new Audio('/music/Jump Sound Effect.mp3');
-const gameOverSound = new Audio('/music/Pou game over sound effect.mp3');
-const hitSound = new Audio('/music/Dead body hitting ground sound effect.mp3');
-const bgm = new Audio('/music/Pokémon League (Night) - Pokémon Brilliant Diamond and Shining Pearl OST (Gamerip).mp3');
+const walkSound = new Audio('./music/Sound Effects - Footsteps.mp3');
+const jumpSound = new Audio('./music/Jump Sound Effect.mp3');
+const gameOverSound = new Audio('./music/Pou game over sound effect.mp3');
+const hitSound = new Audio('./music/Dead body hitting ground sound effect.mp3');
+const bgm = new Audio('./music/Pokémon League (Night) - Pokémon Brilliant Diamond and Shining Pearl OST (Gamerip).mp3');
 
 // Set the volume for the background music
 bgm.volume = 0.6;
-bgm.loop = true; // Loop the background music
+bgm.loop = true; 
 
 const player = {
     x: initialSpawnX,
@@ -260,7 +260,7 @@ function drawMonsters(cameraX) {
 }
 
 function drawPlatforms(cameraX) {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0)'; // Change to your preferred platform color
+    ctx.fillStyle = 'rgba(0, 0, 0, 0)'; 
     platforms.forEach(platform => {
         ctx.fillRect(platform.x - cameraX, platform.y, platform.width, platform.height);
     });
